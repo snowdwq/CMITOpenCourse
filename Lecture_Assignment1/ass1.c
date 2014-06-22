@@ -12,7 +12,7 @@ int main(void)
 
 	char msg[] = "Hello world";
 	puts(msg);
-	// msg = "Hello worlD"; // not possible because arrays are constant pointers, same as say char const *msg = "Hello world";
+	// msg = "Hello worlD"; // not possible because arrays are constant pointers, same as char const *msg = "Hello world";
 	// puts(msg);
 
 	puts("\x41");
