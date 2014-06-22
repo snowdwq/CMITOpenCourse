@@ -10,10 +10,10 @@ int main(void)
 {
 	puts("HELLO WORLD");
 
-    char msg[] = "Hello world";
+	char msg[] = "Hello world";
 	puts(msg);
 	// msg = "Hello worlD"; // not possible because arrays are constant pointers, same as say char const *msg = "Hello world";
-    // puts(msg);
+	// puts(msg);
 
 	puts("\x41");
 	puts("\060");
@@ -21,17 +21,17 @@ int main(void)
 	char msg2[] = MSG1;
 	puts(msg2);
 
-    char* msg3 = "Hello world";
-    putchar(msg3[9]);
-    puts("");
-    msg3 = MSG2;
-    puts(msg3);
-    putchar(msg3[7]);
-    // putchar(msg3[9]);
-    puts("");
-    //putchar(msg3[10]);
+	char* msg3 = "Hello world";
+	putchar(msg3[9]);
+	puts("");
+	msg3 = MSG2;
+	puts(msg3);
+	putchar(msg3[7]);
+	// putchar(msg3[9]);
+	puts("");
+	//putchar(msg3[10]);
 
-    // macro is just an alias for what it has defined
+	// macro is just an alias for what it has defined
 	double ans = 18.0/squared(2+1);
 	double ans2 = 18.0/squared2(2+1);
 	double ans3 = 18.0/squared3(2+1);
