@@ -5,7 +5,7 @@ int main(void)
     long i;
     for(i = 0; i < 100000000; i++)
     {
-        int* k = (int*)malloc(sizeof(int));
+        int* k = malloc(sizeof(int));
         *k = 4;
         free(k);
     }
