@@ -18,7 +18,7 @@ unsigned long hashstring(const char* str)
   return hash%MAX_BUCKETS;
 }
 
-void test(char* str) // problematic when passing string literals, it should be const
+void test(char* str) // problematic when passing string literals, it should be const. or we should first copy it before passing it as an argument
 {
     str[0] = 'b'; // str should be const in order to prohibit us to change it
 }
@@ -34,6 +34,7 @@ int main(void)
     ints[1] = 5;
     printf("%d\n", *ints);
 
+    // http://stackoverflow.com/questions/10628256/initializing-array-of-integer-pointer-in-c/20204518#20204518
     int *arr = (int[]){3,1,4,5,2}; // (int[]) tells explicitly to the compiler to create an array of integers
     arr[2] = 11;
     int z;
