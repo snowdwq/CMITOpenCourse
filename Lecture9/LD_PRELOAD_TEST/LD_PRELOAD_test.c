@@ -6,8 +6,9 @@ int main ()
 {
    char command[50];
 
-   strcpy( command, "ls -l" );
+   strcpy(command, "ls -l" );
    system(command);
+   system("ls -l");
 
    return(0);
 }

@@ -6,7 +6,7 @@
 ## -Wl passes options to linker
 
 libsystem.so: libsystem.c
-	gcc -shared -Wl,-soname,libsystem.so.1 -Wl,-m,elf_i386 -m32 -fPIC -o libsystem.so.1.0  libsystem.c
+	gcc -shared -Wl,-soname,libsystem.so.1 -Wl,-m,elf_i386 -m32 -fPIC -o libsystem.so.1.0  libsystem.c ## -m32 and elf_i386 are for flags for 32 bit executables
 	ln -s libsystem.so.1.0 libsystem.so.1
 	ln -s libsystem.so.1 libsystem.so
 
