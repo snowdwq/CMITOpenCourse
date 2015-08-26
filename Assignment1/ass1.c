@@ -5,6 +5,8 @@
 #define squared2(x) (x*x)
 #define squared3(x) (x)*(x)
 #define squared4(x) ((x)*(x))
+// defines just substitutes the macro with the corresponding value
+// squared(3+1) = 3+1*3+1
 
 int main(void)
 {
