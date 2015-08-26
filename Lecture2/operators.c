@@ -17,7 +17,7 @@ int main(void)
 
     int x6 = 0x01<<4;
     int x7 = 1<<2;
-    int x8 = 0x010>>4;
+    int x8 = 0x010>>4; // apo 16 paei sto 1, an valw >>5 tote tha ginei 0 gt to 1 tha eksafanistei kai allo dexia
     int x9 = 4>>1;
 
     printf("%d\n", x6);
