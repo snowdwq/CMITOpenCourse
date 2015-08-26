@@ -6,9 +6,12 @@ int main(void)
 {
 	puts("HELLO WORLD");
 
+    #ifdef _TEST1
 	const char msg[] = "Hello world";
+    puts(msg);
 
-	puts(msg);
+    #endif
+    // do nothing
 
 	return 0;
 }
